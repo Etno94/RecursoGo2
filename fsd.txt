@@ -1,0 +1,75 @@
+
+tablas: Usuario, Recursos (intermedia entre ambas)
+
+	recursos:	intermed:	usuario:
+	IDRecurs:1	IDUser:16	IDUser:16
+	material	IDRecurs:1	nombre:Delos
+	rareza		Cantidad:X	etc
+					etc
+
+Casa de subastas (tiene recursos publicados por usuario)
+
+	publicaciones:	intermed?:	usuario:
+	IDPublic:1			IDUser:16
+	IDRecurs:1			nombre:Delos
+	precio:$X
+	cantidad:X
+	
+
+usuario -> nombre
+	-> recursos que posee
+	-> mail
+	-> pass
+	-> plata?
+	-> 
+
+casa de subastas -> nombre usuario que postea
+		 -> recurso publicado
+		 -> precio
+		 -> cantidad
+		 -> campo estado ( aver si está vigente o vendida)
+		 -> 
+
+recurso -> nombre
+	-> material-----
+	-> rareza-----
+	-> precio?
+	-> forma de conseguirlo?-----
+	-> 
+
+
+SHOP DE ITEMS
+
+usuario compra item -> item genera recurso -> usuario vende recurso ->
+consigue "oro" -> compra item
+
+	shop -> item
+	     -> precio
+	     -> info, etc
+	     -> fotito
+
+	usuario tambien tiene -> item (si/no)
+			      -> skills??
+			      -> 
+
+	item -> nombre
+	  no -> uso?
+	shop -> recursos que consigue
+
+	subastas -> usuario
+		 -> item
+		 -> fotito
+		 -> cantidad
+		 -> precio
+		 -> tiempo
+
+
+¿¿¿SHOP DE RECURSOS???
+
+usuario compra recurso -> utiliza recurso?
+	       	       -> vende recurso?
+	
+
+
+
+
